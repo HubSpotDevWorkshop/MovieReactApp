@@ -22,9 +22,6 @@ class SearchPage extends Component {
         const results = body.Search;
         // check body.Error? i.e. "Too many results"
         this.setState({ results });
-      })
-      .catch(e => {
-        debugger;
       });
   }
 
