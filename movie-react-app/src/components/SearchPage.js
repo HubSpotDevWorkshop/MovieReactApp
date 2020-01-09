@@ -30,7 +30,7 @@ class SearchPage extends Component {
 
   renderMovie(movie) {
     return (
-      <div className="result" key={movie.imdbID}>
+      <div className="movie" key={movie.imdbID}>
         <img src={movie.Poster} />
         <h3>{movie.Title}</h3>
       </div>
@@ -42,6 +42,7 @@ class SearchPage extends Component {
       <div>
         <div className="search">
           <input
+            placeholder="Search movies..."
             value={this.state.searchText}
             onChange={e => this.setState({ searchText: e.target.value })}
           />
